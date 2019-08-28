@@ -17,13 +17,14 @@ import javax.inject.Named;
     //GEN[:DATA
     {
   "definitions": {
-    "Call_to_action": {
+    "Calltoaction": {
       "type": "object",
       "x-type": "component",
       "properties": {
         "text": {
           "type": "string",
           "x-source": "inject",
+          "x-form-label": "Text",
           "x-form-type": "text"
         },
         "url": {
@@ -35,10 +36,10 @@ import javax.inject.Named;
       }
     }
   },
-  "name": "Call_to_action",
-  "componentPath": "themecleanflex/components/call_to_action",
+  "name": "Calltoaction",
+  "componentPath": "themecleanflex/components/calltoaction",
   "package": "com.themecleanflex.models",
-  "modelName": "Call_to_action",
+  "modelName": "Calltoaction",
   "classNameParent": "AbstractComponent"
 }
 //GEN]
@@ -47,7 +48,7 @@ import javax.inject.Named;
 //GEN[:DEF
 @Model(
         adaptables = Resource.class,
-        resourceType = "themecleanflex/components/call_to_action",
+        resourceType = "themecleanflex/components/calltoaction",
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL,
         adapters = IComponent.class
 )
@@ -57,12 +58,12 @@ import javax.inject.Named;
 )
 
 //GEN]
-public class Call_to_actionModel extends AbstractComponent {
+public class CalltoactionModel extends AbstractComponent {
 
-    public Call_to_actionModel(Resource r) { super(r); }
+    public CalltoactionModel(Resource r) { super(r); }
 
     //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"text"} */
 	@Inject
 	private String text;
 
@@ -74,7 +75,7 @@ public class Call_to_actionModel extends AbstractComponent {
 //GEN]
 
     //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-type":"text"} */
+    	/* {"type":"string","x-source":"inject","x-form-label":"Text","x-form-type":"text"} */
 	public String getText() {
 		return text;
 	}

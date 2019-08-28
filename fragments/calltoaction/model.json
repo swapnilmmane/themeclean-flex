@@ -1,12 +1,13 @@
 {
   "definitions": {
-    "Call_to_action": {
+    "Calltoaction": {
       "type": "object",
       "x-type": "component",
       "properties": {
         "text": {
           "type": "string",
           "x-source": "inject",
+          "x-form-label": "Text",
           "x-form-type": "text"
         },
         "url": {
