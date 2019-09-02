@@ -1,14 +1,17 @@
 module.exports = {
     convert: function($, f) {
-        //f.bindPath($)
-        f.wrap($, 'themecleanflex-components-block')
-        f.bindAttribute($.parent(),'model','model')
+       f.wrap($, 'themecleanflex-components-block')
+       f.bindAttribute($.parent(),'model','model')
 
-        //h2
-        f.mapField($.find('h2'), 'model.firstimagetitle')
-        //p
-        f.mapField($.find('p'), 'model.firstimagetext')
-        //img
-        f.bindAttribute($.find('img').first(), 'src', 'model.firstimage')
+        f.addFor($.find('div.first').first(), 'model.cards')
+       //Title
+       f.mapRichField($.find('h2').first(), "item.title")
+       //f.mapField($.find('h2'), 'item.text')
+       //text
+       f.mapRichField($.find('p').first(), "item.text")
+       //f.mapField($.find('p'), 'item.text')
+        //images
+       f.bindAttribute($.find('img').first(), 'src', 'item.image')
+
     }
 }

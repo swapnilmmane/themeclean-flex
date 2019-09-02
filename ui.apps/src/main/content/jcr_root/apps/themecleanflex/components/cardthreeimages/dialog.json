@@ -1,67 +1,38 @@
 {
   "fields": [
     {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "firstimagetitle",
-      "label": "First Image Title",
-      "model": "firstimagetitle"
-    },
-    {
-      "type": "input",
-      "inputType":"text",
-      "placeholder": "firstimagetext",
-      "label": "First Image Text",
-      "model": "firstimagetext"
-    },
-    {
-      "type": "pathbrowser",
-      "browserRoot": "/content/assets",
-      "placeholder": "firstimage",
-      "label": "First Image",
-      "model": "firstimage"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "secondimagetitle",
-      "label": "Second Image Title",
-      "model": "secondimagetitle"
-    },
-    {
-      "type": "input",
-      "inputType":"text",
-      "placeholder": "secondimagetext",
-      "label": "Second Image Text",
-      "model": "secondimagetext"
-    },
-    {
-      "type": "pathbrowser",
-      "browserRoot": "/content/assets",
-      "placeholder": "secondimage",
-      "label": "Second Image",
-      "model": "secondimage"
-    },
-    {
-      "type": "input",
-      "inputType": "text",
-      "placeholder": "thirdimagetitle",
-      "label": "Third Image Title",
-      "model": "thirdimagetitle"
-    },
-    {
-      "type": "input",
-      "inputType":"text",
-      "placeholder": "thirdimagetext",
-      "label": "Third Image Text",
-      "model": "thirdimagetext"
-    },
-    {
-      "type": "pathbrowser",
-      "browserRoot": "/content/assets",
-      "placeholder": "thirdimage",
-      "label": "Third Image",
-      "model": "thirdimage"
+      "type": "collection",
+      "multifield": true,
+      "fieldLabel": [
+        "title",
+        "value"
+      ],
+      "fields": [
+        {
+          "type": "input",
+          "inputType": "text",
+          "placeholder": "title",
+          "label": "Card Title",
+          "model": "title"
+        },
+        {
+          "type": "texteditor",
+          "rows": 10,
+          "placeholder": "text",
+          "label": "Card Text",
+          "model": "text"
+        },
+        {
+          "type": "pathbrowser",
+          "browserRoot": "/content/assets",
+          "placeholder": "image",
+          "label": "Card Image",
+          "model": "image"
+        }
+      ],
+      "placeholder": "cards",
+      "label": "Cards",
+      "model": "cards"
     }
   ]
 }

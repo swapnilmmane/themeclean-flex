@@ -21,62 +21,33 @@ import javax.inject.Named;
       "type": "object",
       "x-type": "component",
       "properties": {
-        "firstimagetitle": {
+        "cards": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Image Title",
-          "x-form-type": "text"
-        },
-        "firstimagetext": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Image Text",
-          "x-form-type": "texteditor"
-        },
-        "firstimage": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Image",
-          "x-form-type": "pathbrowser",
-          "x-form-browserRoot": "/content/assets"
-        },
-        "secondimagetitle": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Image Title",
-          "x-form-type": "text"
-        },
-        "secondimagetext": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Image Text",
-          "x-form-type": "texteditor"
-        },
-        "secondimage": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Image",
-          "x-form-type": "pathbrowser",
-          "x-form-browserRoot": "/content/assets"
-        },
-        "thirdimagetitle": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Image Title",
-          "x-form-type": "text"
-        },
-        "thirdimagetext": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Image Text",
-          "x-form-type": "texteditor"
-        },
-        "thirdimage": {
-          "type": "string",
-          "x-source": "inject",
-          "x-form-label": "Image",
-          "x-form-type": "pathbrowser",
-          "x-form-browserRoot": "/content/assets"
+          "x-form-label": "Cards",
+          "x-form-fieldLabel": "title",
+          "x-form-type": "collection",
+          "properties": {
+            "title": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Card Title",
+              "x-form-type": "text"
+            },
+            "text": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Card Text",
+              "x-form-type": "texteditor"
+            },
+            "image": {
+              "type": "string",
+              "x-source": "inject",
+              "x-form-label": "Card Image",
+              "x-form-type": "pathbrowser",
+              "x-form-browserRoot": "/content/assets"
+            }
+          }
         }
       }
     }
@@ -105,98 +76,26 @@ import javax.inject.Named;
 //GEN]
 public class CardthreeimagesModel extends AbstractComponent {
 
-    public CardthreeimagesModel(Resource r) { super(r); }
+	public CardthreeimagesModel(Resource r) { super(r); }
 
-    //GEN[:INJECT
-    	/* {"type":"string","x-source":"inject","x-form-label":"Image Title","x-form-type":"text"} */
+	//GEN[:INJECT
+    	/* {"type":"string","x-source":"inject","x-form-label":"Cards","x-form-fieldLabel":"title","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Card Text","x-form-type":"texteditor"},"image":{"type":"string","x-source":"inject","x-form-label":"Card Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"}}} */
 	@Inject
-	private String firstimagetitle;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"} */
-	@Inject
-	private String firstimagetext;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
-	@Inject
-	private String firstimage;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Title","x-form-type":"text"} */
-	@Inject
-	private String secondimagetitle;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"} */
-	@Inject
-	private String secondimagetext;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
-	@Inject
-	private String secondimage;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Title","x-form-type":"text"} */
-	@Inject
-	private String thirdimagetitle;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"} */
-	@Inject
-	private String thirdimagetext;
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
-	@Inject
-	private String thirdimage;
+	private List<IComponent> cards;
 
 
 //GEN]
 
-    //GEN[:GETTERS
-    	/* {"type":"string","x-source":"inject","x-form-label":"Image Title","x-form-type":"text"} */
-	public String getFirstimagetitle() {
-		return firstimagetitle;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"} */
-	public String getFirstimagetext() {
-		return firstimagetext;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
-	public String getFirstimage() {
-		return firstimage;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Title","x-form-type":"text"} */
-	public String getSecondimagetitle() {
-		return secondimagetitle;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"} */
-	public String getSecondimagetext() {
-		return secondimagetext;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
-	public String getSecondimage() {
-		return secondimage;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Title","x-form-type":"text"} */
-	public String getThirdimagetitle() {
-		return thirdimagetitle;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image Text","x-form-type":"texteditor"} */
-	public String getThirdimagetext() {
-		return thirdimagetext;
-	}
-
-	/* {"type":"string","x-source":"inject","x-form-label":"Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"} */
-	public String getThirdimage() {
-		return thirdimage;
+	//GEN[:GETTERS
+    	/* {"type":"string","x-source":"inject","x-form-label":"Cards","x-form-fieldLabel":"title","x-form-type":"collection","properties":{"title":{"type":"string","x-source":"inject","x-form-label":"Card Title","x-form-type":"text"},"text":{"type":"string","x-source":"inject","x-form-label":"Card Text","x-form-type":"texteditor"},"image":{"type":"string","x-source":"inject","x-form-label":"Card Image","x-form-type":"pathbrowser","x-form-browserRoot":"/content/assets"}}} */
+	public List<IComponent> getCards() {
+		return cards;
 	}
 
 
 //GEN]
 
-    //GEN[:CUSTOMGETTERS
-    //GEN]
+	//GEN[:CUSTOMGETTERS
+	//GEN]
 
 }
