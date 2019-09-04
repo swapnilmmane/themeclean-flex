@@ -52,18 +52,6 @@
                     path="/jcr:content/n3c4d5b55-2636-4b40-be31-9fd92e076749/slides/slides0"
                     slidelink=""
                     text="&lt;p>&lt;span>&lt;p>Walk the walk.A fashion can become the prevailing style in &#xa;behaviour or manifest the newest creations of designers, technologists, &#xa;engineers, and design managers. &lt;/p>&lt;/span>&lt;/p>"/>
-                <slides1
-                    jcr:primaryType="nt:unstructured"
-                    alt="Sailboat sailing on a lake"
-                    imagefit="cover"
-                    imagepath="/content/assets/themecleanflex/samples/sailing-lake_large.jpg"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "/>
-                <slides2
-                    jcr:primaryType="nt:unstructured"
-                    alt="Sailboats sailing on an ocean"
-                    imagefit="cover"
-                    imagepath="/content/assets/themecleanflex/samples/beach-boats-ocean_large.jpg"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "/>
             </slides>
         </n3c4d5b55-2636-4b40-be31-9fd92e076749>
         <n3274dcd5-99fc-4b96-80f6-d7d41e05e3a1
@@ -148,7 +136,7 @@
                     imagewidth=""
                     name="cards0"
                     path="/jcr:content/n4256cf4d-c2f6-4882-aefa-d4f26981ab5c/cards/cards0"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis, est eget commodo imperdiet, lectus quam bibendum ex, eu commodo mi diam molestie tortor."
+                    text=""
                     title=""/>
                 <cards1
                     jcr:lastModified="{Date}2019-08-31T18:17:52.090+05:30"
@@ -235,7 +223,7 @@
             backgroundtype="color"
             bgcolor="#ffffff"
             bgsize="cover"
-            bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
+            bgvideo=""
             bgxposition="50"
             bgyposition="50"
             blockwidth="default"
