@@ -12,48 +12,7 @@
         name="home"
         template="/content/templates/themecleanflex"
         templatePath="/content/templates/themecleanflex">
-        <n3c4d5b55-2636-4b40-be31-9fd92e076749
-            jcr:lastModified="{Date}2019-08-31T18:10:13.872+05:30"
-            jcr:lastModifiedBy="admin"
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="themecleanflex/components/carousel"
-            bgcolor="#ffffff"
-            bgsize="cover"
-            bgvideo="https://www.youtube.com/embed/Ju86mknumYM"
-            bgxposition="50"
-            bgyposition="50"
-            blockwidth="full"
-            bottompadding="20"
-            carouselheight="67"
-            color2="#c0c0c0"
-            colorscheme=""
-            controls="false"
-            custombackground="false"
-            fullheight="false"
-            htmlelement="section"
-            indicators="false"
-            interval="5"
-            itemsperpage="1"
-            overlaycolor="#ffffff"
-            overlayopacity="50"
-            pause="false"
-            toppadding="20"
-            wrap="true">
-            <slides jcr:primaryType="nt:unstructured">
-                <slides0
-                    jcr:lastModified="{Date}2019-08-31T18:10:13.870+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    alt=""
-                    component="nt:unstructured"
-                    imagefit="cover"
-                    imagepath="/content/assets/themecleanflex/vuestorefront/full_width_banner.jpg"
-                    name="slides0"
-                    path="/jcr:content/n3c4d5b55-2636-4b40-be31-9fd92e076749/slides/slides0"
-                    slidelink=""
-                    text="Hello India."/>
-            </slides>
-        </n3c4d5b55-2636-4b40-be31-9fd92e076749>
+        
         <n3274dcd5-99fc-4b96-80f6-d7d41e05e3a1
             jcr:lastModified="{Date}2019-08-31T18:12:59.846+05:30"
             jcr:lastModifiedBy="admin"
