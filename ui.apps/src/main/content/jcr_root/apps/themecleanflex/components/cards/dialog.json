@@ -84,6 +84,14 @@
       "max": 6
     },
     {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "headtitle",
+      "label": "Card Head Title",
+      "model": "headtitle",
+      "visible": "model.showtext == 'true'"
+    },
+    {
       "type": "collection",
       "multifield": true,
       "fieldLabel": [

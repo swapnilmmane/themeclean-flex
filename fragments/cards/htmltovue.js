@@ -2,6 +2,7 @@ module.exports = {
     convert: function($, f) {
     	f.wrap($, 'themecleanflex-components-block')
         f.bindAttribute($.parent(),'model','model')
+        f.mapField($.find('h2'),'model.headtitle')
 
         let widths = `{
             'lg:w-full': model.cardsperrow == 1,
@@ -76,7 +77,8 @@ module.exports = {
 
         let a = $.find('a.btn')
         f.addIf($.find('div.text-center').first(), 'item.buttontext')
-        f.addIf( a, 'showbutton(item)')
+        //f.addIf( a, 'showbutton(item)')
+         f.addIf(a, 'model.showbutton == \'true\'')
         f.bindAttribute( a, 'href', f.pathToUrl('item.buttonlink'))
         f.bindAttribute( a, 'class', aClasses, false)
         f.mapRichField( a, "item.buttontext")
