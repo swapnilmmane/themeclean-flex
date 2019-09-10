@@ -35,8 +35,6 @@ module.exports = {
         f.mapRichField(h2, "item.title")
         f.bindAttribute( h2, 'class', "{'bg-gray-700': model.captionbg === 'true', 'pb-12': model.indicators === 'true'}", false)
 
-
-
         let figcaption = $.find('figcaption').first()
         f.addIf(figcaption, "item.text")
         f.mapRichField(figcaption, "item.text")
