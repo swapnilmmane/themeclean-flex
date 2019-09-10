@@ -3,7 +3,7 @@
     <div class="p-5" v-if="isEditAndEmpty">no content defined for component</div>
     <div v-else>
       <center>
-        <h2>{{model.headtitle}}</h2>
+        <h2>{{model.title}}</h2>
       </center>
       <div class="flex flex-wrap -mx-3">
         <div class="card my-3 px-0 md:px-3" v-bind:class="{

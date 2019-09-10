@@ -86,9 +86,9 @@
     {
       "type": "input",
       "inputType": "text",
-      "placeholder": "headtitle",
-      "label": "Card Head Title",
-      "model": "headtitle",
+      "placeholder": "title",
+      "label": "Title",
+      "model": "title",
       "visible": "model.showtext == 'true'"
     },
     {

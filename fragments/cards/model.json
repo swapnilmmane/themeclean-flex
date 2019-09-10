@@ -70,10 +70,10 @@
           "x-form-min": 1,
           "x-form-max": 6
         },
-        "headtitle": {
+        "title": {
           "type": "string",
           "x-source": "inject",
-          "x-form-label": "Card Head Title",
+          "x-form-label": "Title",
           "x-form-visible": "model.showtext == 'true'",
           "x-form-type": "text"
         },

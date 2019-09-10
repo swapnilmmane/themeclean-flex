@@ -127,7 +127,7 @@
           "type": "input",
           "inputType": "text",
           "placeholder": "title",
-          "label": "Image Title",
+          "label": "Title",
           "model": "title"
         },
         {
