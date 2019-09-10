@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="per:Component" jcr:title="Banner" group="">
+  <jcr:content jcr:primaryType="nt:unstructured" image="/content/assets/themecleanflex/images/full_width_banner.jpg" text="A fashion can become the prevailing style in behaviour or manifest the newest creations of designers, technologists, engineers, and design managers." title="Walk the walk."/>
+</jcr:root>
