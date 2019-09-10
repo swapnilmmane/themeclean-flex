@@ -1,0 +1,25 @@
+{
+  "fields": [
+    {
+      "type": "pathbrowser",
+      "browserRoot": "/content/assets",
+      "placeholder": "image",
+      "label": "Image",
+      "model": "image"
+    },
+    {
+      "type": "input",
+      "inputType": "text",
+      "placeholder": "title",
+      "label": "Title",
+      "model": "title"
+    },
+    {
+      "type": "texteditor",
+      "rows": 10,
+      "placeholder": "text",
+      "label": "Text",
+      "model": "text"
+    }
+  ]
+}
